@@ -7,9 +7,9 @@
 //   let saat = Math.trunc((between / (1000 * 60 * 60)) % 24);
 //   let deqiqe = Math.trunc((between / (1000 * 60)) % 60);
 //   let saniye = Math.trunc((between / 1000) % 60);
-//   let r=Math.trunc(Math.random() *256);
-//   let g=Math.trunc(Math.random() *256);
-//   let b=Math.trunc(Math.random() *256);  
+//   let r=Math.floor(Math.random() *256);
+//   let g=Math.floor(Math.random() *256);
+//   let b=Math.floor(Math.random() *256);  
 //   console.log(` %c${gun} gun ${saat} saat ${deqiqe} deqiqe ${saniye} saniye` , `color: rgb(${r},${g},${b})`);
 // }, 1000);
 //  let random = (min,max) => Math.floor((Math.random() * (max - min *1)) +min );
@@ -54,47 +54,40 @@
 
 
 //task2
-let students =[
-    {
-        id:1,
-        ad:"Eliyar",
-        soyad:"Ehmedli",
-        hobby:"idman",
-        qiymet:80
-    },
-    {
-        id:2,
-        ad:"Xeyale",
-        soyad:"Mustafayeva",
-        hobby:"kitab oxumaq",
-        qiymet:100
-    },
-    {
-        id:3,
-        ad:"Arzu",
-        soyad:"Musayeva",
-        hobby:"mahni oxumaq",
-        qiymet:91
-    } ,
-    {
-        id:4,
-        ad:"Eli",
-        soyad:"eliyev",
-        hobby:"idman",
-        qiymet:60
-    }
-];
+// let students =[
+//     {
+//         id:1,
+//         ad:"Eliyar",
+//         soyad:"Ehmedli",
+//         hobby:"idman",
+//         qiymet:80
+//     },
+//     {
+//         id:2,
+//         ad:"Xeyale",
+//         soyad:"Mustafayeva",
+//         hobby:"kitab oxumaq",
+//         qiymet:100
+//     },
+//     {
+//         id:3,
+//         ad:"Arzu",
+//         soyad:"Musayeva",
+//         hobby:"mahni oxumaq",
+//         qiymet:91
+//     } ,
+//     {
+//         id:4,
+//         ad:"Eli",
+//         soyad:"eliyev",
+//         hobby:"idman",
+//         qiymet:60
+//     }
+// ];
   
-//   console.log(students);
+// //    console.log(students);
   
-let n = prompt("ad  daxil edin: ");
-console.log(n);
-let student = students.find(a => a.ad.toUpperCase() === n.toUpperCase())
-if (student) {
-    alert(` bu ad movcuddur!!! :${student.ad}`)
-}
-else {
-    alert("bu ad movcud deyil")
-}
-
-
+// let name = prompt("Enter product name: ").toLowerCase();
+// let netice = students.filter((a) => a.ad.toLowerCase().includes(name));
+// let cmd = netice.map((st) => st.ad);
+// console.log(cmd);
